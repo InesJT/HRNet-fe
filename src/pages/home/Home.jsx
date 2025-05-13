@@ -6,12 +6,14 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Select from 'react-select';
 import DatePicker from "react-datepicker";
+import ItModal from 'it-modal';
 import "react-datepicker/dist/react-datepicker.css";
 
 import { add } from '/src/redux/slices/employees';
 import { ErrorText, InputText } from '/src/components';
 
 import { states, departments } from '/src/utils';
+
 
 const schema = z.object({
   firstName: z.string().min(2),
@@ -180,7 +182,11 @@ const Home = () => {
           <button type="submit">Save</button>
         </form>
       </div>
-      <div id="confirmation" className="modal" hidden={!modalVisible}>Employee Created!</div>
+      <ItModal
+        isVisible={modalVisible}
+        setIsVisible={setModalVisible}
+        body="Employee Created!"
+      />
     </main>
   );
 };
