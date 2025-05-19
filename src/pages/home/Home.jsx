@@ -77,6 +77,7 @@ const Home = () => {
     <main>
       <div className="title">
         <h1>HRnet</h1>
+        <img src="./src/assets/logoHRnet.png" alt="logo HRnet" />
       </div>
       <div className="container">
         <Link to="/current-employees">View Current Employees</Link>
@@ -186,6 +187,7 @@ const Home = () => {
         isVisible={modalVisible}
         setIsVisible={setModalVisible}
         body="Employee Created!"
+        color="#2ecc71"
       />
     </main>
   );

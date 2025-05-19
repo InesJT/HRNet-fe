@@ -1,14 +1,28 @@
 .title {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
   justify-content: center;
+  color: #33691e;
+  padding-bottom: 20px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   align-items: center;
   justify-content: center;
+
+  a {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
 }
 
 label {
