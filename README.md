@@ -40,6 +40,10 @@ The app will be available at http://localhost:5173 by default.
 
     npm run build
 
+### Run production build locally
+
+    npm run preview
+
 ### Linting
 
     npm run lint
